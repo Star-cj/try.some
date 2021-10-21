@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/sstyle.css" />
+    <title>list of things to do</title>
+</head>
+
+<body>
+    <section>
+        <div class="container box">
+            <h1>TO DO LIST</h1>            
+            <form action="">
+                <div>
+                    <label for=""><h2><b>Data in</b></h2></label>
+                    <input type="text" class="txt" placeholder="what do you want to do">
+
+                    <label for=""><h2><b>Date</b></h2></label>
+                    <input type="date" class="time" placeholder="time to do it">
+                </div>                
+            </form>
+            <div class="click">
+                <button class="btn">Calculate</button>
+                <button class="reset">Reset</button>
+            </div>            
+        </div>
+        <div class="result box" id="result">
+            <h2 class="todo"></h2>
+            <h2 class="showTime"></h2>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

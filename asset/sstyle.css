@@ -1,0 +1,108 @@
+
+@font-face {
+    font-family: 'danc-cj';
+    src: url('dancing-script-webfont.eot');
+    src: url('dancing-script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dancing-script-webfont.woff2') format('woff2'),
+         url('dancing-script-webfont.woff') format('woff'),
+         url('dancing-script-webfont.ttf') format('truetype'),
+         url('dancing-script-webfont.svg#dancing_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-image: linear-gradient(orange,grey,orange);
+}
+
+h1{
+    font-weight: bold;
+    size: 60px;
+    text-align: center;
+    font-family:'danc-cj', cursive;
+    color: rgb(2, 2, 51);
+    text-shadow: -4px 0 #fff, 0 4px  #fff, 4px 0 #fff, 0 -4px #fff;
+    text-decoration: underline;
+}
+
+h2 {
+    position: center;
+    font-weight: bold;
+    size: 15px;
+    font-family:'danc-cj', cursive;
+    color: red;
+    text-shadow: -2px 0 #000, 0 2px  #000, 2px 0 #000, 0 -2px #000;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    height:50%;
+    border: 4px solid blue;
+}
+
+section {
+    height: 100%;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 30%;
+    transform: translate(5%);
+    /* border: 2px solid black; */
+}
+
+form input {
+    padding: 3px;
+    width: 100%;
+    font-size:30px;
+    background: #fff;
+    
+}
+.btn{
+    background: green;
+    color: #000;
+    width: 50%;
+}
+
+.btn, .reset {
+    border-radius: 7px;
+    box-shadow: 4px 4px 10px #000;
+    padding: 8px 5px;
+    margin: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+}    
+
+.result {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    height:30%;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.reset {
+    display: none;
+    background: rgb(83, 4, 4);
+    color: #fff;
+    width: 35%;
+}
+.click{
+    display: flex;
+}
