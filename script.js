@@ -19,7 +19,7 @@ function whatToDo(e) {
     if (text === ""|| time === "") {
         return (result.innerHTML = "Provide a valid information! and refresh");
     }  else {
-        showResult(`<span>${text}</span>`, `By : <span>${time}</span>`, "green");
+        showResult(`Do "<span>${text}</span>" :`, `by "<span>${time}</span>"\n`, "green","orange");
     };
     
     reset.style.display = "block";
@@ -33,8 +33,9 @@ function whatToDo(e) {
     console.log('Array for To-do: ',arryForTodo);
 }
 
-function showResult(text,time, color) {
-    result.style.color = color;
+function showResult(text,time, color,colour) {
+    todo.style.color = color;
+    showTime.style.color = colour;
     todo.innerHTML = text;
     showTime.innerHTML = time;
 }
@@ -45,7 +46,4 @@ reset.addEventListener("click", () => {
     result.style.color = "";
     todo.innerHTML = "";
     showTime.innerHTML = "";
-    result.innerHTML ="";
 });
-
-
