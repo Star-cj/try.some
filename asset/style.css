@@ -28,7 +28,7 @@ body {
 
 h1{
     font-weight: bold;
-    size: 60px;
+    font-size: 100%;
     text-align: center;
     font-family:'danc-cj', cursive;
     color: rgb(2, 2, 51);
@@ -39,14 +39,22 @@ h1{
 h2 {
     position: center;
     font-weight: bold;
-    size: 15px;
+    font-size: 75%;
     font-family:'danc-cj', cursive;
     color: red;
     text-shadow: -2px 0 #000, 0 2px  #000, 2px 0 #000, 0 -2px #000;
 }
 
+p{
+    position: center;
+    font-weight: bold;
+    font-size: 75%;
+    font-family:'danc-cj', cursive;
+    text-shadow: -2px 0 #000, 0 2px  #000, 2px 0 #000, 0 -2px #000;
+}
+
 .container {
-    max-width: 60%;
+    max-width: 60vh;
     margin: 0 auto;
     padding: 10px;
     height:50%;
@@ -54,11 +62,13 @@ h2 {
 }
 
 section {
-    height: 100%;
-    margin: 70px;
+    height: 100vh;
+    width: 80%;
+    margin: 10%;
     justify-content: center;
     align-items: center;
     left: 50%;
+    right: 50%;
     top: 30%;
     transform: translate(5%);
     /* border: 2px solid black; */
@@ -67,7 +77,7 @@ section {
 form input {
     padding: 3px;
     width: 100%;
-    font-size:30px;
+    font-size:20px;
     background: #fff;
     
 }
@@ -88,14 +98,20 @@ form input {
     text-align: center;
 }    
 
-.result {
-    max-width: 60%;
+div#result {
+    max-width: 60vh;
     margin: 0 auto;
     padding: 10px;
-    height:30%;
+    height: 40vh;
     /* border: 2px solid black; */
     display: flex;
 }
+/* div.todo{
+    padding: 5px;
+    height: 10vh;
+    border: 2px solid rgb(153, 13, 13);
+    background-color: blue;
+} */
 
 .reset {
     display: none;
@@ -105,4 +121,7 @@ form input {
 }
 .click{
     display: flex;
+}
+hr{
+    display: none;
 }
